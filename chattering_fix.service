@@ -1,0 +1,12 @@
+[Unit]
+Description=Keyboard Chattering Fix service
+
+[Service]
+# Change ExecStart to the absolute path of the file, executing chattering_fix.sh
+ExecStart=/home/itsmenewbie03/bin/KeyboardChatteringFix-Linux/chattering_fix.sh
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
